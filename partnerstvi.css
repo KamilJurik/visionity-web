@@ -189,3 +189,47 @@
   .p-split { grid-template-columns: 1fr; gap: 32px; }
   .p-split-reverse { direction: ltr; }
 }
+
+/* ── Kvalita obsahu ── */
+.p-quality-title {
+  color: var(--white);
+}
+
+.p-quality p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.75);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.p-quality p strong {
+  color: var(--white);
+}
+
+.p-quality-list {
+  list-style: none;
+  margin: 0 0 24px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.p-quality-list li {
+  padding-left: 28px;
+  position: relative;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.75);
+  line-height: 1.7;
+}
+
+.p-quality-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cyan);
+}
