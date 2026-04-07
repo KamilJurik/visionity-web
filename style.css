@@ -920,6 +920,12 @@ footer ul a:hover { color: var(--cyan); }
   :root { --nav-h: 60px; }
   .section { padding-block: 60px; }
 
+  #navbar {
+    background: rgba(11, 20, 38, .95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.25);
+  }
+
   .nav-links {
     display: none;
     position: fixed;
