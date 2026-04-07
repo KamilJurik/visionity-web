@@ -661,9 +661,19 @@ ul { list-style: none; }
   color: var(--muted);
 }
 
-@media (max-width: 640px) {
-  .program-item { grid-template-columns: 1fr; gap: 6px; }
-  .program-meta { flex-direction: row; align-items: center; gap: 12px; }
+@media (max-width: 760px) {
+  .program-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 16px 0;
+  }
+  .program-meta {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .program-body { padding-left: 0; }
 }
 
 /* =========================================================
