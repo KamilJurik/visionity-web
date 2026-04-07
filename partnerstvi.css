@@ -73,9 +73,7 @@
 }
 
 /* ── Co vám partnerství přinese ── */
-.p-benefits {
-  background: var(--white);
-}
+.p-benefits {}
 
 .p-benefits-intro {
   text-align: center;
