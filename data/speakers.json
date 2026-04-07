@@ -1,0 +1,52 @@
+{
+  "speakers": [
+    {
+      "name": "Aneta Zichová",
+      "title": "advokát, Accace",
+      "bio": "Jako advokátka v Accace pomáhám firmám s pracovním právem, korporátní agendou a ochranou duševního vlastnictví. Poskutuji praktická řešení pro bezpečný a efektivní chod podnikání.",
+      "photo": "images/speakers/aneta-zichova.jpg",
+      "email": "aneta.zichova@accace.com",
+      "linkedin": ""
+    },
+    {
+      "name": "Kamil Juřík",
+      "title": "CEO, Accelapps",
+      "bio": "S mým týmem vytváříme flexibilní podnikové aplikace, praktická řešení, která firmám reálně šetří čas a konečně pomáhají využít potenciál SharePointu a Microsoft 365 naplno. Vyvíjíme aplikace se zákazníky, zákazníci vyvíjejí nás.",
+      "photo": "images/speakers/kamil-jurik.jpg",
+      "email": "info@accelapps.cz",
+      "linkedin": ""
+    },
+    {
+      "name": "Anna Schwarzová",
+      "title": "Zakladatelka Novitim, expertka na nábor a personální diagnostiku",
+      "bio": "S mým týmem realizujeme náborové kampaně pro firmy, které hledají nové zaměstnance. Strategii a diagnostiku propojujeme tak, aby každý výběr vedl ke stabilnímu a spokojenému týmu. Věřím, že správní lidé na správném místě nejsou náhoda, ale výsledek promyšleného náboru, poznání motivace kandidátů a neustálé péče o zaměstnance.",
+      "photo": "images/speakers/anna-schwarzova.jpg",
+      "email": "anicka@novitim.cz",
+      "linkedin": ""
+    },
+    {
+      "name": "Přednášející 4",
+      "title": "Pozice, Firma",
+      "bio": "Doplňte bio přednášejícího.",
+      "photo": "",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Přednášející 5",
+      "title": "Pozice, Firma",
+      "bio": "Doplňte bio přednášejícího.",
+      "photo": "",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Přednášející 6",
+      "title": "Pozice, Firma",
+      "bio": "Doplňte bio přednášejícího.",
+      "photo": "",
+      "email": "",
+      "linkedin": ""
+    }
+  ]
+}

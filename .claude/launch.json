@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "visionity",
+      "runtimeExecutable": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "D:\\Users\\kamil.jurik\\Documents\\Claude\\visionity-web\\serve.ps1"],
+      "port": 3000
+    }
+  ]
+}

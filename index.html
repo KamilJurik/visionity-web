@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Visionity Day 2026</title>
+  <meta name="description" content="Největší česká konference pro HR profesionály. 11. 6. 2026 · Praha · 9:00–18:00">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== NAVIGACE ========== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#uvod" class="nav-logo">
+      <img src="images/logo.png" alt="Visionity" height="36">
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Otevřít menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#uvod">Kde & kdy</a></li>
+      <li><a href="#o-akci">O akci</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#vstupenky">Vstupenky</a></li>
+      <li><a href="#prednaselici">Přednášející</a></li>
+      <li><a href="#partneri">Partneři</a></li>
+      <li><a href="#vstupenky" class="btn-nav">Koupit vstupenky</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section id="uvod" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">HR Visionity Day <span class="hero-year">2026</span></h1>
+    <p class="hero-subtitle">Méně teorie, více výsledků z praxe. Jeden den,<br>který změní váš pohled na využití technologií v podnikání.</p>
+    <div class="hero-info">
+      <span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        11. 6. 2026
+      </span>
+      <span class="sep">·</span>
+      <span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Praha 4, Spaces Parkview
+      </span>
+      <span class="sep">·</span>
+      <span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        9:00 až 18:00 hodin
+      </span>
+    </div>
+    <div class="hero-btns">
+      <a href="#vstupenky" class="btn btn-primary">Koupit vstupenky &rsaquo;</a>
+      <a href="#program" class="btn btn-outline">Zobrazit program &rsaquo;</a>
+    </div>
+  </div>
+  <a href="#o-akci" class="hero-scroll" aria-label="Scrollovat dolů">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+  </a>
+</section>
+
+<!-- ========== O AKCI ========== -->
+<section id="o-akci" class="section section-white">
+  <div class="container about-grid">
+    <div class="about-left">
+      <p class="section-eyebrow">O akci</p>
+      <h2 class="about-title">Vzdělávací<br>den</h2>
+      <p class="about-claim">Inovujeme dnes, aby se vize firem staly realitou zítřka</p>
+    </div>
+    <div class="about-right">
+      <p>Nabízíme vám inspiraci a vhled do integrace nových technologických řešení v kontextu měnících se potřeb trhu práce a s ní související změnou HR procesů i pracovních návyků.</p>
+      <p>Objevíte informace o tom, jak efektivně reagovat na nové potřeby trhu práce, zaměstnanců i zaměstnavatelů tak, abyste využili potenciál současných i budoucích technologií. Připojte se k nám, poznejte své kolegyně a kolegy z oboru a staňte se součástí diskuze, která vám pomůže efektivně formovat strategie vašich firem.</p>
+      <p class="about-highlight">HR Visionity Day je setkání účastníků z řad HR manažerek a manažerů malých a středně velkých firem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PŘEDNÁŠEJÍCÍ ========== -->
+<section id="prednaselici" class="section section-light">
+  <div class="container">
+    <p class="section-eyebrow">Kdo vystoupí</p>
+    <h2 class="section-title">Přednášející</h2>
+    <div class="speakers-grid" id="speakersGrid">
+      <!-- Načítáno dynamicky z data/speakers.json -->
+    </div>
+    <p class="speakers-note" id="networkingNote"></p>
+  </div>
+</section>
+
+<!-- ========== NETWORKING ========== -->
+<section id="networking" class="section section-white">
+  <div class="container about-grid">
+    <div class="about-left">
+      <p class="section-eyebrow">Setkávání</p>
+      <h2 class="about-title">Networ&shy;king</h2>
+    </div>
+    <div class="about-right">
+      <p>HR Visionity Days přináší jedinečnou příležitost navázat kontakt a osobně se setkat s desítkami HR profesionálů z různých firem, právníkem, specialisty na HR marketing nebo zkušenou koučkou leadershipu.</p>
+      <p>Závěrečný neformální networking je ideálním místem pro poznávání lidí v uvolněné a přátelské atmosféře. Můžete si při tom vychutnat drink, popovídat si s kolegy a diskutovat o svých vizích, zkušenostech a nápadech.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PŘEDCHOZÍ ROČNÍK ========== -->
+<section id="predchozi" class="section section-dark">
+  <div class="container previous-grid">
+    <div class="previous-text">
+      <p class="section-eyebrow">Ohlédnutí za akcí</p>
+      <h2 class="previous-title">HR Visionity Day 2025</h2>
+      <p class="previous-date">Červen 2025</p>
+      <p>Na červnovém HR Visionity Day 2025 jsme společně otevřeli témata, která hýbou moderním HR světem – od automatizace a digitalizace HR procesů, přes nejnovější změny a novinky vyplývající z novely zákoníku práce, praxi employer brandingu, práci s firemní kulturou a efektivním rozvojem leadershipu.</p>
+      <p>Účastníci nejen naslouchali inspirativním přednáškám a debatovali o aktuálních trendech, ale také využili příležitost k networkingu, navazování nových kontaktů a sdílení zkušeností s kolegy z oboru. Den byl nabitý nejen informacemi, ale i skvělou atmosférou.</p>
+    </div>
+    <div class="previous-video">
+      <video
+        controls
+        preload="none"
+        poster="images/video-poster.jpg"
+        style="width:100%;border-radius:12px;display:block;">
+        <source src="https://cdn.accelapps.cz/media/visionity/HRVisionityDay_cerven_2025_low_q.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 3 PILÍŘE ========== -->
+<section id="pilire" class="section section-white">
+  <div class="container">
+    <p class="section-eyebrow">Co vás čeká</p>
+    <h2 class="section-title">Tři důvody, proč přijít</h2>
+    <div class="pillars-grid">
+
+      <div class="pillar">
+        <div class="pillar-image">
+          <img src="images/pillar-prednasky.jpg" alt="Přednášky" onerror="this.parentElement.classList.add('img-placeholder')">
+        </div>
+        <div class="pillar-body">
+          <span class="pillar-number">01</span>
+          <h3 class="pillar-title">Přednášky</h3>
+          <p>Nenechte si ujít skvělé přednášky předních odborníků z oblasti technologií, procesního řízení, práva, HR marketingu a nasbírejte inspiraci také v oblasti rozvoje leadershipu.</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-image">
+          <img src="images/pillar-konzultace.jpg" alt="Konzultační zóna" onerror="this.parentElement.classList.add('img-placeholder')">
+        </div>
+        <div class="pillar-body">
+          <span class="pillar-number">02</span>
+          <h3 class="pillar-title">Konzultační zóna</h3>
+          <p>S každým přednášejícím budete mít v průběhu dne možnost zkonzultovat vaše konkrétní dotazy a požadavky.</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-image">
+          <img src="images/pillar-networking.jpg" alt="Networking" onerror="this.parentElement.classList.add('img-placeholder')">
+        </div>
+        <div class="pillar-body">
+          <span class="pillar-number">03</span>
+          <h3 class="pillar-title">Networking</h3>
+          <p>Sdílejte své zkušenosti, poznejte nové kolegyně a kolegy ze svého oboru. Neřízený networking je nedílnou součástí programu celého dne.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROGRAM ========== -->
+<section id="program" class="section section-light">
+  <div class="container">
+    <p class="section-eyebrow">Přednášky plné inspirace a know-how</p>
+    <h2 class="section-title">Program</h2>
+    <div class="program-list" id="programList">
+      <!-- Načítáno dynamicky z data/program.json -->
+    </div>
+  </div>
+</section>
+
+<!-- ========== VSTUPENKY / REGISTRACE ========== -->
+<section id="vstupenky" class="section section-dark">
+  <div class="container">
+    <p class="section-eyebrow">Chci se zúčastnit</p>
+    <h2 class="section-title">Vstupenky</h2>
+    <div class="tickets-pricing">
+      <div class="tickets-price-card">
+        <p class="tickets-label">EarlyBird <span>do 25. 5. 2026</span></p>
+        <p class="tickets-amount">990,- Kč</p>
+      </div>
+      <div class="tickets-price-divider"></div>
+      <div class="tickets-price-card">
+        <p class="tickets-label">Standard <span>od 26. 5. 2026</span></p>
+        <p class="tickets-amount">1 490,- Kč</p>
+      </div>
+    </div>
+    <p class="tickets-note">Vstupné na HR Visionity Day, červen 2026</p>
+    <button class="btn btn-primary tickets-toggle" id="ticketsToggle" aria-expanded="false">
+      &#9654; Objednat vstupné
+    </button>
+    <div class="tickets-wrapper" id="ticketsForm" hidden>
+      <iframe
+        src="https://forms.zohopublic.eu/accelapps/form/EventRegistrationForm/formperma/_I7FiFcCLAxU2O5PSYxF9mDIDXsZXqBpZq67WlxyQTA"
+        width="100%"
+        height="1250"
+        frameborder="0"
+        scrolling="yes"
+        title="Registrační formulář HR Visionity Day 2026"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PARTNEŘI ========== -->
+<section id="partneri" class="section section-light">
+  <div class="container">
+    <p class="section-eyebrow">Spolupráce</p>
+    <h2 class="section-title">Partneři</h2>
+    <div class="partners-grid">
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partners/accace.png" alt="Accace" onerror="this.parentElement.classList.add('logo-text');this.outerHTML='<span>.:accace</span>'">
+        </div>
+        <p class="partner-desc">Accace je aktivním a spolehlivým partnerem společností, které hledají špičkové poradenské a outsourcingové služby. Na náročné potřeby klientů odpovídáme chytrými řešeními, moderními technologiemi, lidským přístupem a mezinárodním přesahem.</p>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partners/jhk.png" alt="JHK.cz" onerror="this.parentElement.classList.add('logo-text');this.outerHTML='<span>Jhk.cz</span>'">
+        </div>
+        <p class="partner-desc">Naším posláním je vytvářet příležitosti pro podnikání, prosazovat a podporovat opatření, která přispívají k rozvoji podnikání v ČR, a tím i k celkové ekonomické stabilitě státu. Bráníme přijetí byrokratických nařízení a chceme snížit počet těch stávajících. Proto POMÁHÁME PODNIKATELŮM RŮST.</p>
+      </div>
+    </div>
+
+    <div class="partners-divider">
+      <span>Mediální partneři</span>
+    </div>
+
+    <div class="partners-grid">
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partners/educity.png" alt="EduCity" onerror="this.parentElement.classList.add('logo-text');this.outerHTML='<span>EduCity</span>'">
+        </div>
+        <p class="partner-desc">EduCity je největší vzdělávací server v České republice, který využívá tisíce firem k výběru dodavatelů vzdělávacích a poradenských služeb.</p>
+      </div>
+      <div class="partner-card">
+        <div class="partner-logo">
+          <img src="images/partners/hrnews.png" alt="HR News" onerror="this.parentElement.classList.add('logo-text');this.outerHTML='<span>HRNews</span>'">
+        </div>
+        <p class="partner-desc">Portál HR News sdružuje největší komunitu HR manažerů a specialistů v ČR. Poskytujeme zajímavý obsah napříč všemi aspekty personální práce – od benefitů, přes právní problematiku až po nábor. Šestnáct tisíc registrovaných uživatelů, největší HR skupina na síti LinkedIn a desetitisíce článků a videí z oblasti práce s lidmi.</p>
+      </div>
+    </div>
+
+    <p class="partners-thanks">Děkujeme partnerům za podporu a spolupráci</p>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer id="kontakt">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <img src="images/logo.png" alt="Visionity" height="40">
+      <h4>O projektu</h4>
+      <p>Visionity je projekt společnosti accelapps s.r.o.</p>
+      <p>Spojujeme vize s technologiemi pro lepší budoucnost firem.</p>
+      <div class="footer-social">
+        <!-- ⚠️ DOPLNIT: URL sociálních sítí -->
+        <a href="#" aria-label="LinkedIn">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>O nás</h4>
+      <p style="font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.7">Od roku 2017 v <strong style="color:rgba(255,255,255,.7)">Accel</strong>apps pomocí rychle vytvářených podnikových aplikací, profesionálně dodaných konzultací a podpory umožňujeme uživatelům našich řešení mít svou práci i její výsledky pod kontrolou, svůj firemní život lepší a produktivnější.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigace</h4>
+      <ul>
+        <li><a href="#o-akci">O akci</a></li>
+        <li><a href="#prednaselici">Přednášející</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#vstupenky">Vstupenky</a></li>
+        <li><a href="#partneri">Partneři</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li><strong style="color:rgba(255,255,255,.7)">accelapps s.r.o.</strong></li>
+        <li>Hvězdova 1716/2b, 140 00 Praha 4</li>
+        <li><a href="tel:+420234715878">+420 234 715 878</a></li>
+        <li><a href="mailto:info@accelapps.cz">info@accelapps.cz</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-map">
+      <h4>Místo konání</h4>
+      <p style="font-size:.875rem;color:rgba(255,255,255,.6);margin-bottom:12px;line-height:1.6">
+        <strong style="color:rgba(255,255,255,.85)">Spaces Parkview</strong><br>
+        Pujmanové 1753/10a<br>
+        Praha 4, 14000
+      </p>
+      <iframe
+        src="https://maps.google.com/maps?q=Pujmanové+1753/10a,+14000+Praha+4,+Česká+republika&output=embed&hl=cs"
+        width="100%" height="140" style="border:0;border-radius:8px;opacity:.7;filter:grayscale(1)" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Visionity · <a href="https://visionity.cz">visionity.cz</a></p>
+  </div>
+</footer>
+
+<script src="data/speakers.js"></script>
+<script src="data/program.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

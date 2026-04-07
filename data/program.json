@@ -1,0 +1,93 @@
+[
+  {
+    "time": "9:00",
+    "type": "break",
+    "title": "Registrace a ranní networking",
+    "speaker": "",
+    "description": ""
+  },
+  {
+    "time": "10:00",
+    "type": "talk",
+    "title": "Úvodní slovo",
+    "speaker": "Organizátoři",
+    "description": ""
+  },
+  {
+    "time": "10:15",
+    "type": "talk",
+    "title": "Název první přednášky",
+    "speaker": "Jméno přednášejícího",
+    "description": "Krátký popis přednášky — 1–2 věty."
+  },
+  {
+    "time": "11:00",
+    "type": "talk",
+    "title": "Název druhé přednášky",
+    "speaker": "Jméno přednášejícího",
+    "description": ""
+  },
+  {
+    "time": "11:45",
+    "type": "talk",
+    "title": "Název třetí přednášky",
+    "speaker": "Jméno přednášejícího",
+    "description": ""
+  },
+  {
+    "time": "12:30",
+    "type": "break",
+    "title": "Oběd a networking",
+    "speaker": "",
+    "description": ""
+  },
+  {
+    "time": "13:30",
+    "type": "talk",
+    "title": "Název čtvrté přednášky",
+    "speaker": "Jméno přednášejícího",
+    "description": ""
+  },
+  {
+    "time": "14:15",
+    "type": "talk",
+    "title": "Název páté přednášky",
+    "speaker": "Jméno přednášejícího",
+    "description": ""
+  },
+  {
+    "time": "15:00",
+    "type": "break",
+    "title": "Přestávka a konzultační zóna",
+    "speaker": "",
+    "description": ""
+  },
+  {
+    "time": "15:30",
+    "type": "talk",
+    "title": "Název šesté přednášky",
+    "speaker": "Jméno přednášejícího",
+    "description": ""
+  },
+  {
+    "time": "16:15",
+    "type": "talk",
+    "title": "Závěrečná přednáška",
+    "speaker": "Jméno přednášejícího",
+    "description": ""
+  },
+  {
+    "time": "17:00",
+    "type": "break",
+    "title": "Závěr a networking",
+    "speaker": "",
+    "description": ""
+  },
+  {
+    "time": "18:00",
+    "type": "break",
+    "title": "Konec akce",
+    "speaker": "",
+    "description": ""
+  }
+]
