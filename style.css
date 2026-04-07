@@ -940,9 +940,7 @@ footer ul a:hover { color: var(--cyan); }
   .pillars-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
 
-  .program-item { grid-template-columns: 64px 1fr; }
-  .program-item::before { left: 52px; }
-  .program-dot { left: 46px; }
+  .program-item { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 380px) {
