@@ -921,9 +921,11 @@ footer ul a:hover { color: var(--cyan); }
   .section { padding-block: 60px; }
 
   #navbar {
-    background: rgba(11, 20, 38, .95);
-    backdrop-filter: blur(12px);
+    background: rgba(11, 20, 38, .98);
     box-shadow: 0 2px 20px rgba(0,0,0,.25);
+  }
+  #navbar.scrolled {
+    backdrop-filter: none;
   }
 
   .nav-links {
