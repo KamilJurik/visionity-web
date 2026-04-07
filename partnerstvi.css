@@ -192,7 +192,12 @@
 
 /* ── Kvalita obsahu ── */
 .p-quality-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
   color: var(--white);
+  margin-bottom: 28px;
+  margin-top: 10px;
 }
 
 .p-quality p {
