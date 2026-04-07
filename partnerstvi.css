@@ -238,3 +238,75 @@
   border-radius: 50%;
   background: var(--cyan);
 }
+
+/* ── Jak začít / CTA ── */
+.p-contact-intro {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 700px;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.p-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 700px;
+  margin-bottom: 56px;
+}
+
+.p-step {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.p-step-num {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.p-step-body p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.75;
+  padding-top: 12px;
+}
+
+.p-step-body p strong {
+  color: var(--navy);
+}
+
+.p-step-body a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.p-contact-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.p-contact-question {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+@media (max-width: 640px) {
+  .p-step { grid-template-columns: 40px 1fr; gap: 16px; }
+  .p-step-num { width: 40px; height: 40px; font-size: 1rem; }
+}
