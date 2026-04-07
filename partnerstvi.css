@@ -2,67 +2,72 @@
    PARTNERSTVÍ — stránka specifické styly
    ========================================================= */
 
-/* Hero sekce partnerství */
-.partner-hero {
-  min-height: 60vh;
+/* ── Hero ── */
+.p-hero {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background: var(--navy);
   position: relative;
   overflow: hidden;
-  padding-top: var(--nav-h);
 }
 
-.partner-hero::before {
-  content: '';
+.p-hero-bg {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(26,95,212,.25) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(0,200,255,.1) 0%, transparent 50%);
+    radial-gradient(ellipse 70% 70% at 70% 30%, rgba(26,95,212,.3) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 10% 80%, rgba(0,200,255,.12) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 40% at 90% 90%, rgba(26,95,212,.15) 0%, transparent 50%);
   pointer-events: none;
 }
 
-.partner-hero-content {
+.p-hero-content {
   position: relative;
   z-index: 1;
-  width: min(1160px, 100% - 48px);
+  width: min(860px, 100% - 48px);
   margin-inline: auto;
-  padding-block: 80px;
+  padding-block: calc(var(--nav-h) + 80px) 100px;
+  text-align: center;
 }
 
-.partner-hero-label {
+.p-hero-label {
   display: inline-block;
-  font-size: .8rem;
+  font-size: .75rem;
   font-weight: 700;
-  letter-spacing: .12em;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--cyan);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
-.partner-hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+.p-hero h1 {
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
   font-weight: 800;
   line-height: 1.1;
   color: var(--white);
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
-.partner-hero h1 span {
+.p-hero h1 span {
   color: var(--cyan);
 }
 
-.partner-hero p {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+.p-hero p {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
   color: rgba(255,255,255,.7);
-  max-width: 600px;
-  line-height: 1.7;
-  margin-bottom: 40px;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.partner-hero-cta {
+.p-hero-highlight {
+  color: rgba(255,255,255,.85) !important;
+}
+
+.p-hero-cta {
+  margin-top: 44px;
   display: flex;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
 }
