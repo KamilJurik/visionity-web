@@ -1,0 +1,68 @@
+/* =========================================================
+   PARTNERSTVÍ — stránka specifické styly
+   ========================================================= */
+
+/* Hero sekce partnerství */
+.partner-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--nav-h);
+}
+
+.partner-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(26,95,212,.25) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(0,200,255,.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.partner-hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(1160px, 100% - 48px);
+  margin-inline: auto;
+  padding-block: 80px;
+}
+
+.partner-hero-label {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 20px;
+}
+
+.partner-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.partner-hero h1 span {
+  color: var(--cyan);
+}
+
+.partner-hero p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255,255,255,.7);
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.partner-hero-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
