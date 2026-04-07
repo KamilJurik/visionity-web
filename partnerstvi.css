@@ -133,3 +133,59 @@
 @media (max-width: 860px) {
   .p-benefits-grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; }
 }
+
+/* ── Split sekce (text + obrázek) ── */
+.p-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.p-split-reverse {
+  direction: rtl;
+}
+.p-split-reverse > * {
+  direction: ltr;
+}
+
+.p-split-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--navy);
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+
+.p-split-text p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.p-split-text p strong {
+  color: var(--navy);
+}
+
+.p-img-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(26,95,212,.15) 0%, rgba(0,200,255,.1) 100%);
+  border: 2px dashed rgba(26,95,212,.2);
+}
+
+.p-split-image img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 860px) {
+  .p-split { grid-template-columns: 1fr; gap: 32px; }
+  .p-split-reverse { direction: ltr; }
+}
