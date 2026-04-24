@@ -6,7 +6,7 @@ const SPEAKERS_DATA = {
       bio: "Simona Babčáková je výraznou osobností české kulturní scény, známá nejen svým hereckým a komediálním talentem, ale také hlubokým zájmem o osobní rozvoj a duševní zdraví. Její kariéra zahrnuje působení v renomovaných divadlech, jako je Dejvické divadlo, a účinkování v improvizační skupině NO A!. Kromě herectví se věnuje moderování, vede improvizační workshopy a přednáší o vědomé komunikaci, syndromu vyhoření a psychohygieně. Její přednášky a workshopy jsou proslulé kombinací odborných znalostí a osobitého humoru, což z nich činí inspirativní zážitek pro široké publikum.",
       photo: "images/speakers/simona-babcakova.jpg",
       email: "",
-      linkedin: ""
+      linkedin: "https://www.linkedin.com/in/simona-babcakova"
     },
     {
       name: "Kamil Juřík",
@@ -30,7 +30,7 @@ const SPEAKERS_DATA = {
       bio: "Zaměřuje se především na firemní poradenství, vzdělávání, rozvoj managementu a osobnostní rozvoj. Opírá se o dlouholeté praktické zkušenosti z finanční oblasti, řízení zaměstnanců a budování týmů, které propojuje s mentoringem, koučinkem a systematickou prací s talenty. Věnuje se rozvoji potenciálu jednotlivců i manažerů, podporuje jejich přirozené silné stránky a pomáhá jim nacházet smysluplné a udržitelné cesty k výkonu i spokojenosti. Mezi její klíčová témata patří komunikace, poskytování zpětné vazby, vedení lidí a jejich osobnostní rozvoj, time management a koučink v leadershipu s využitím NLP metod. Je specialistkou na program Manager štěstí, který propojuje efektivní leadership, práci s talentem a well-being v organizacích.",
       photo: "images/speakers/adela-karlovska.jpg",
       email: "",
-      linkedin: ""
+      linkedin: "https://www.linkedin.com/in/adela-karlovska"
     },
     {
       name: "Přednášející 5",

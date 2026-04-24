@@ -34,7 +34,7 @@ const PROGRAM_DATA = [
     time: `10:30 \u2013 11:15`,
     location: `Přednáškový sál`,
     type: `talk`,
-    title: `Probudíme váš SharePoint opět k životu: 5 rychlých kroků, které okamžitě zvednou jeho hodnotu`,
+    title: `Probuďme váš SharePoint k životu: rychlé kroky, které okamžitě zvednou jeho hodnotu`,
     speaker: `Kamil Juřík`,
     speaker_title: `CEO, Accelapps`,
     description: `Mnoho firem má SharePoint Online někde v tenantu, ale reálně ho lidé obcházejí a příliš nevyužívají \u2013 dokumenty jsou v Teams chatech, na discích, v e-mailech a výsledkem je chaos, duplicity a ztracený čas. V této přednášce ukážu praktický přístup, jak SharePoint probudit k životu bez mnohaměsíčních analýz a jak během pár týdnů postavit prostředí, které lidé opravdu začnou používat. Odnesete si konkrétní checklist a praxí ověřené tipy na rychlé úpravy, které mají okamžitý dopad.`
