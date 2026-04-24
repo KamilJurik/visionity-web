@@ -1,4 +1,4 @@
-$root = "D:\Users\kamil.jurik\Documents\Claude\visionity-web"
+$root = "D:\Users\kamil.jurik\Documents\Claude\Accelapps Internal\visionity-web"
 $port = if ($env:PORT) { $env:PORT } else { 3000 }
 
 $listener = [System.Net.HttpListener]::new()
