@@ -84,10 +84,10 @@ const PROGRAM_DATA = [
     time: `15:30 \u2013 16:15`,
     location: `Přednáškový sál`,
     type: `talk`,
-    title: `Přednáška bude upřesněna`,
-    speaker: `...`,
-    speaker_title: `...`,
-    description: `...`
+    title: `Jak se stát magnetem na TALENTY`,
+    speaker: `Adéla Karlovská`,
+    speaker_title: `trenérka a koučka`,
+    description: `Anotace přednášky bude doplněna.`
   },
   {
     time: `16:30 \u2013 16:40`,

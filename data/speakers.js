@@ -25,10 +25,10 @@ const SPEAKERS_DATA = {
       linkedin: "https://www.linkedin.com/in/anetazichova"
     },
     {
-      name: "Přednášející 4",
-      title: "Pozice, Firma",
-      bio: "Info o přednášejícím bude doplněno.",
-      photo: "",
+      name: "Adéla Karlovská",
+      title: "trenérka a koučka",
+      bio: "Zaměřuje se především na firemní poradenství, vzdělávání, rozvoj managementu a osobnostní rozvoj. Opírá se o dlouholeté praktické zkušenosti z finanční oblasti, řízení zaměstnanců a budování týmů, které propojuje s mentoringem, koučinkem a systematickou prací s talenty. Věnuje se rozvoji potenciálu jednotlivců i manažerů, podporuje jejich přirozené silné stránky a pomáhá jim nacházet smysluplné a udržitelné cesty k výkonu i spokojenosti. Mezi její klíčová témata patří komunikace, poskytování zpětné vazby, vedení lidí a jejich osobnostní rozvoj, time management a koučink v leadershipu s využitím NLP metod. Je specialistkou na program Manager štěstí, který propojuje efektivní leadership, práci s talentem a well-being v organizacích.",
+      photo: "images/speakers/Adela-Karlovska.jpg",
       email: "",
       linkedin: ""
     },
