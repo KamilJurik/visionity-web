@@ -17,10 +17,10 @@ const SPEAKERS_DATA = {
       linkedin: ""
     },
     {
-      name: "Přednášející 3",
-      title: "Pozice, Firma",
-      bio: "Info o přednášejícím bude doplněno.",
-      photo: "",
+      name: "Simona Babčáková",
+      title: "herečka, moderátorka, lektorka",
+      bio: "Simona Babčáková je výraznou osobností české kulturní scény, známá nejen svým hereckým a komediálním talentem, ale také hlubokým zájmem o osobní rozvoj a duševní zdraví. Její kariéra zahrnuje působení v renomovaných divadlech, jako je Dejvické divadlo, a účinkování v improvizační skupině NO A!. Kromě herectví se věnuje moderování, vede improvizační workshopy a přednáší o vědomé komunikaci, syndromu vyhoření a psychohygieně. Její přednášky a workshopy jsou proslulé kombinací odborných znalostí a osobitého humoru, což z nich činí inspirativní zážitek pro široké publikum.",
+      photo: "images/speakers/simona-babcakova.jpg",
       email: "",
       linkedin: ""
     },
