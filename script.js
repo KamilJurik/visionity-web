@@ -23,13 +23,23 @@ navLinks.querySelectorAll('a').forEach(a => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 /* ── Načtení přednášejících ── */
+const BIO_LIMIT = 300;
+
+function truncateBio(bio, limit) {
+  if (!bio || bio.length <= limit) return { short: bio, needsToggle: false };
+  const cut = bio.lastIndexOf(' ', limit);
+  const idx = cut > 0 ? cut : limit;
+  return { short: bio.slice(0, idx).replace(/[,;:.\s]+$/, ''), needsToggle: true };
+}
+
 function loadSpeakers() {
   const data = SPEAKERS_DATA;
   const grid = document.getElementById('speakersGrid');
   const note = document.getElementById('networkingNote');
-  {
 
-    grid.innerHTML = data.speakers.map(s => `
+  grid.innerHTML = data.speakers.map(s => {
+    const { short, needsToggle } = truncateBio(s.bio || '', BIO_LIMIT);
+    return `
       <div class="speaker-card">
         <div class="speaker-photo-wrap ${s.photo ? '' : 'no-photo'}">
           ${s.photo
@@ -39,7 +49,11 @@ function loadSpeakers() {
         <div class="speaker-body">
           <p class="speaker-name">${s.name}</p>
           <p class="speaker-title">${s.title}</p>
-          <p class="speaker-bio">${s.bio}</p>
+          <div class="speaker-bio-wrap${needsToggle ? ' is-truncated' : ''}">
+            <p class="speaker-bio speaker-bio-short">${needsToggle ? short + '…' : s.bio}</p>
+            ${needsToggle ? `<p class="speaker-bio speaker-bio-full" hidden>${s.bio}</p>
+            <button type="button" class="speaker-bio-toggle" aria-expanded="false">Zobrazit více</button>` : ''}
+          </div>
           <div class="speaker-contacts">
             ${s.email ? `<a class="speaker-email" href="mailto:${s.email}">${s.email}</a>` : ''}
             ${s.linkedin
@@ -53,11 +67,32 @@ function loadSpeakers() {
           </div>
         </div>
       </div>
-    `).join('');
+    `;
+  }).join('');
 
-    if (data.networking_note) {
-      note.textContent = data.networking_note;
+  /* Toggle show-more pro dlouhé biografie */
+  grid.addEventListener('click', e => {
+    const btn = e.target.closest('.speaker-bio-toggle');
+    if (!btn) return;
+    const wrap = btn.closest('.speaker-bio-wrap');
+    const shortP = wrap.querySelector('.speaker-bio-short');
+    const fullP  = wrap.querySelector('.speaker-bio-full');
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    if (expanded) {
+      fullP.setAttribute('hidden', '');
+      shortP.removeAttribute('hidden');
+      btn.textContent = 'Zobrazit více';
+      btn.setAttribute('aria-expanded', 'false');
+    } else {
+      fullP.removeAttribute('hidden');
+      shortP.setAttribute('hidden', '');
+      btn.textContent = 'Zobrazit méně';
+      btn.setAttribute('aria-expanded', 'true');
     }
+  });
+
+  if (data.networking_note) {
+    note.textContent = data.networking_note;
   }
 }
 
